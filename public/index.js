@@ -53,14 +53,14 @@ function matchRegexFilter(value) {
 }
 
 function parseNextFilter(value) {
-  const stringMatch = matchStringFilter(value);
-  if (stringMatch) {
-    return { length: stringMatch[0].length, filter: stringMatch[1] };
-  }
-
   const regexMatch = matchRegexFilter(value);
   if (regexMatch) {
     return { length: regexMatch[0].length, filter: new RegExp(regexMatch[1], regexMatch[2]) }
+  }
+
+  const stringMatch = matchStringFilter(value);
+  if (stringMatch) {
+    return { length: stringMatch[0].length, filter: stringMatch[1] };
   }
 
   return null;
