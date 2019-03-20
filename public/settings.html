@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!-- This page is loaded when the Trello board loads -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Settings</title>
+  <link rel="stylesheet" href="https://p.trellocdn.com/power-up.min.css">
+</head>
+<body>
+  <form id="settings-form">
+    <label for="lists-filter">Lists:</label>
+    <input type="text" placeholder="Todo,%20%22Goals,%20aims%22,%20/sprint%20%5B0-9%5D+/i" id="lists-filter">
+    <p>Comma separated list of list names to enable the warning on. You can wrap your column names in quotes if they contain commas and regular expressions are also supported.</p>
+
+    <button type="submit" class="mod-primary">Save</button>
+  </form>
+
+  <script src="https://p.trellocdn.com/power-up.min.js"></script>
+  <script src="/default/settings.js"></script>
+</body>
+</html>
