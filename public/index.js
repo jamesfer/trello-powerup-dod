@@ -55,7 +55,7 @@ function matchRegexFilter(value) {
 function parseNextFilter(value) {
   const regexMatch = matchRegexFilter(value);
   if (regexMatch) {
-    return { length: regexMatch[0].length, filter: new RegExp(regexMatch[1], regexMatch[2]) }
+    return { length: regexMatch[0].length, filter: new RegExp(regexMatch[1], regexMatch[3]) }
   }
 
   const stringMatch = matchStringFilter(value);
