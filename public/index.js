@@ -1,16 +1,16 @@
 const defineDonePopup = {
   title: 'Define done',
-  url: 'trello-powerup-dod/public/define-done.html',
+  url: 'define-done.html',
 };
 
 const authorizePopup = {
   title: 'Authorize your trello account',
-  url: 'trello-powerup-dod/public/authorize.html',
+  url: 'authorize.html',
 };
 
 const settingsPopup = {
   title: 'Definition of Done Settings',
-  url: 'trello-powerup-dod/public/settings.html',
+  url: 'settings.html',
 };
 
 const defaultSettings = {
